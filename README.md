@@ -70,12 +70,6 @@ npm run dev
   curl -X POST -H "Content-Type: application/json" -d '{"message": "Your follow-up message"}' http://localhost:3000/chat/{threadId}
   ```
 
-## Project Structure
-
-- `index.ts`: Entry point of the application, sets up the Express server and API routes
-- `agent.ts`: Defines the LangGraph agent, tools, and conversation flow
-- `seed-database.ts`: Script for generating and seeding synthetic employee data into MongoDB
-
 ## How it works
 
 1. The seed script in `seed-database.ts` generates synthetic employee data and populates the MongoDB database.
@@ -85,10 +79,3 @@ npm run dev
 5. User inputs are processed through the LangGraph agent, generating appropriate responses and updating the conversation state.
 6. Conversation data is persisted in MongoDB Atlas, allowing for continuity across sessions.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
